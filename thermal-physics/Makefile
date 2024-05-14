@@ -1,5 +1,4 @@
 PDFTeX := pdflatex
-TeXFLAGS := --pdf
 TeXSRC := main.tex
 
 .PHONY: all clean
@@ -7,7 +6,7 @@ TeXSRC := main.tex
 all: target
 
 target: $(TeXSRC) $(BibTeXSRC)
-	$(PDFTeX) $(TeXFLAGS) $(TeXSRC)
+	$(PDFTeX) $(TeXSRC)
 
 clean:
 	rm -f target
