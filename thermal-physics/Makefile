@@ -1,12 +1,11 @@
-PDFTeX := pdflatex
 TeXSRC := main.tex
+AuxSRC := main.aux
 
 .PHONY: all clean
 
 all: target
 
-target: $(TeXSRC) $(BibTeXSRC)
-	$(PDFTeX) $(TeXSRC)
-
+target: $(TeXSRC) $(AuxSRC)
+	pdflatex $(TeXSRC) && bibtex $(AuxSRC) && pdflatex $(TeXSRC) && pdflatex $(TeXSRC)
 clean:
 	rm -f target

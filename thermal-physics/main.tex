@@ -1,20 +1,42 @@
-\documentclass[letterpaper, 11pt]{article}
+\documentclass[letterpaper, 11pt]{report}
 \usepackage[utf8]{inputenc}
-\usepackage{amsfonts, lipsum}
+\usepackage{lipsum}
+\usepackage[toc, page]{appendix}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=red,
+    pdftitle={My Statistics \& Thermal Physics Notes}
+}
+
+\usepackage{geometry}
+\newgeometry{
+    top=0.75in,
+    bottom=0.75in,
+    outer=0.75in,
+    inner=1.5in,
+}
+
+\title{
+    \begin{center}
+        \huge{My Thermal \& Statistical Physics Notes} \\
+        \Large{for Jomo Kenyatta University of Agriculture and Technology} \\
+        \author{Brian M'Ikiara}
+        \date{May 2024}
+    \end{center}
+}
 
 \begin{document}
-	\begin{center}
-		\huge{My Thermal \& Statistical Physics Notes} \\
-		\Large{for Jomo Kenyatta University of Agriculture and Technology} \\
-		\Large{Brian M'Ikiara} \\
-		\date{May 2024}
-	\end{center}
-	\rule{\textwidth}{0.5pt}
+    \maketitle
     \begin{abstract}
     \noindent\lipsum[1-2]
 	\end{abstract}
-	\rule{\textwidth}{0.5pt}
-    \tableofcontents
-    \section{Introduction}
-    \lipsum[1-5]
+    \tableofcontents \pagebreak
+    \listoffigures \pagebreak
+    \include{Introduction}
+    \appendix
+    \include{Appendix}
+    \bibliographystyle{plain}
+    \bibliography{references}
 \end{document}
