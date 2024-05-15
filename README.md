@@ -20,6 +20,8 @@ $ ./<file.tex>
 ## References
 
 - LaTeX Tutorials by Dr. Trefor Bazett @tbazzet: [YouTube](https://youtube.com/@drtrefor)
+- LaTeX Documentation: [Website](https://latex.org)
+- TeX StackExchange: [Website](https://tex.stackexchange.com)
 
 ## Licensing
 
