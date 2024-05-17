@@ -17,26 +17,25 @@
     outer=0.75in,
     inner=1.5in,
 }
+\usepackage{siunitx}
+\usepackage{tikz}
+\usepackage{tcolorbox}
 
 \title{
     \begin{center}
         \huge{My Thermal \& Statistical Physics Notes} \\
         \Large{for Jomo Kenyatta University of Agriculture and Technology} \\
-        \author{Brian M'Ikiara}
-        \date{May 2024}
+        \author{Gitonga B. M'Ikiara}
+        \date{\today}
     \end{center}
 }
 
 \begin{document}
     \maketitle
-    \begin{abstract}
-    \noindent\lipsum[1-2]
-	\end{abstract}
-    \tableofcontents \pagebreak
-    \listoffigures \pagebreak
+    \tableofcontents
+    \listoffigures
     \include{Introduction}
-    \appendix
-    \include{Appendix}
-    \bibliographystyle{plain}
-    \bibliography{references}
+    \include{ch-HeatAndTemperature}
+    \appendix \include{Appendix}
+    \bibliographystyle{plain} \bibliography{references}
 \end{document}
