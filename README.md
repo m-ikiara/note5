@@ -5,18 +5,25 @@
 
 ## Getting Started[^1]
 
-1. Clone the repo using the following command:
+1. Clone the repo and navigate to the new directory:
 
 ```console
 $ git clone https://github.com/m-ikiara/note5.git
 ```
 
-2. Navigate into the new directory and execute the following:
+2. Choose either project you want to view and execute the following:
 
 ```console
-$ pdflatex <file.tex> # ensure that TexLive or MikTex is installed on your system and is added to PATH
-$ ./<file.tex>
+$ cd thermal-physics/ # Suppose that we need thermal-physics notes
+$ make
 ```
+
+3. View the newly created PDF file with the following:
+
+```console
+$ ./main.pdf
+```
+
 ## References
 
 - LaTeX Tutorials by Dr. Trefor Bazett @tbazzet: [YouTube](https://youtube.com/@drtrefor)
